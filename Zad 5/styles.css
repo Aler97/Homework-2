@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 70%;
+  margin: 100px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.chooseMode {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.mode {
+  background-color: rgb(20, 86, 230);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.mode:hover,
+.mode:active {
+  background-color: rgb(64, 129, 250);
+}
+
+.pomodoro,
+.shortBreak {
+  border-right: 2px solid black;
+}
+
+.pomodoro {
+  background-color: rgb(20, 86, 230);
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.startBtn {
+  background-color: rgb(9, 255, 0);
+  color: white;
+}
+
+.stopBtn {
+  background-color: red;
+  color: white;
+}
+
+.recalBtn {
+  background-color: rgb(199, 194, 194);
+  color: black;
+}
+
+.changeColor {
+  background-color: rgb(64, 129, 250);
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+}
+
+.timer-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}

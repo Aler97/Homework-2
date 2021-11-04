@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+:root {
+  --mainColor: rgb(44, 212, 224);
+}
+
+.container {
+  max-width: 500px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--mainColor);
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--mainColor);
+}
+
+#startBtn {
+  padding: 20px 40px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: var(--mainColor);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 15px var(--mainColor);
+}
+
+#startBtn:hover {
+  box-shadow: 0 0 30px var(--mainColor);
+}
+
+#startBtn:active {
+  transform: scale(0.95);
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+.question {
+  text-align: center;
+}
+
+.answers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.btn {
+  font-size: larger;
+  font-weight: bold;
+  padding: 7px 15px;
+  background-color: var(--mainColor);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: black;
+}
+.btn:active {
+  transform: scale(0.97);
+}
+
+.quizEndedMessage {
+  width: 60%;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.restartBtn,
+.restartBtn2 {
+  width: 30%;
+  padding: 20px 40px;
+  font-weight: bold;
+  font-size: larger;
+  cursor: pointer;
+  background-color: var(--mainColor);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 15px var(--mainColor);
+}
+
+.restartBtn:active,
+.restartBtn2:active {
+  transform: scale(0.95);
+}
+
+.restartBtn:hover,
+.restartBtn2:hover {
+  box-shadow: 0 0 30px var(--mainColor);
+}
+
+.congrats {
+  width: 70%;
+  margin: 100px auto;
+  color: var(--mainColor);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.disNone {
+  display: none;
+}

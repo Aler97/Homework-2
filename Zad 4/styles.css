@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.removeClass {
+  width: 0%;
+  margin: 100px auto;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.zoomIn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 90vh;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disNone {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: all;
+}
+
+.closeBtn {
+  border: none;
+  padding: 10px;
+  float: right;
+  cursor: pointer;
+}
+
+.img-slider {
+  width: 50%;
+  margin: auto;
+  height: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#prev:hover,
+#prev:active,
+#next:hover,
+#next:active {
+  opacity: 0.5;
+}
+
+.one {
+  z-index: 0;
+}
+
+.two {
+  z-index: 0;
+}
+
+.three {
+  z-index: 0;
+}
+
+.four {
+  z-index: 0;
+}
+
+.five {
+  z-index: 0;
+}
+
+.slider {
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+  height: 50%;
+  position: absolute;
+  display: flex;
+}
+
+.container button {
+  height: 100%;
+  opacity: 0.1;
+  width: 10%;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#prev {
+  background-image: url(./imgs/left-chevron.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#next {
+  background-image: url(./imgs/right-chevron.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.bigWidth {
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+}
+
+.bigBtnSlider {
+  height: 90vh;
+  width: 90vw;
+}

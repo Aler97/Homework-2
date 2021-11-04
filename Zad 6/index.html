@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="start"><button id="startBtn">Start</button></div>
+      <div class="questionContainer disNone">
+        <div class="question"><h1 id="questionText"></h1></div>
+        <div class="answers">
+          <button class="btn answer1"></button>
+          <button class="btn answer2"></button>
+          <button class="btn answer3"></button>
+          <button class="btn answer4"></button>
+        </div>
+      </div>
+    </div>
+    <div class="quizEndedMessage disNone">
+      <h2>Your score: <span id="score"></span></h2>
+      <button class="restartBtn">Restart Quiz</button>
+    </div>
+    <div class="congrats disNone">
+      <h1>Congratulations! You answered all the questions correctly! 10/10</h1>
+      <button class="restartBtn2">Restart Quiz</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Item Lister</title>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1 id="header-title">Item Lister</h1>
+      <div class="searchBar">
+        <input
+          type="text"
+          placeholder="Search items..."
+          class="form-control"
+          id="filter"
+        />
+        <ul id="itemSuggestions"></ul>
+      </div>
+    </header>
+    <div class="container">
+      <div id="main">
+        <h2 class="title">Add Items</h2>
+        <form class="form-inline" id="addForm">
+          <input type="text" class="form-control" id="item" />
+          <input type="submit" class="btn btn-dark" value="Submit" />
+        </form>
+        <h2 class="title">Items</h2>
+        <ul id="items" class="list-group"></ul>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

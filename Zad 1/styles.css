@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+  width: 100%;
+  color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.container {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 15px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.title {
+  font-weight: 500;
+}
+
+#item {
+  margin-bottom: 5px;
+}
+
+.form-inline {
+  margin-bottom: 10px;
+}
+
+#items {
+  list-style-type: none;
+}
+
+.list-group-item {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+
+input {
+  padding: 5px;
+}
+
+.btn-x {
+  float: right;
+  background-color: red;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+.btn-x:hover {
+  background-color: rgb(172, 0, 0);
+}
+
+.btn-x:active {
+  background-color: rgb(172, 0, 0);
+  transform: scale(0.98);
+}
+
+.form-control {
+  border: 1px solid lightgray;
+  width: 100%;
+}
+.form-control:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+.btn {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: black;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+.searchBar {
+  width: 30%;
+  position: relative;
+}
+
+#itemSuggestions {
+  position: absolute;
+  list-style-type: none;
+  color: black;
+  width: 100%;
+  background-color: white;
+}
+
+.suggestedItem {
+  border-bottom: 1px solid lightgray;
+  height: 30px;
+  padding-left: 5px;
+}
+
+.suggestedItem:hover,
+.suggestedItem:focus {
+  background-color: rgb(231, 226, 226);
+}
