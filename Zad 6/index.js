@@ -189,7 +189,6 @@ function newQuestion() {
         j++;
         k++;
         score++;
-        console.log(j);
     }
 };
 
@@ -199,5 +198,3 @@ function quizEnded() {
     quizEndedCard.classList.remove('disNone');
     restartBtn.addEventListener('click', () => { window.location.reload() });
 }
-
-console.log(questions.length);
